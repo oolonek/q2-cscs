@@ -41,7 +41,7 @@ def cscs(features: biom.Table, css_edges: str, cosine_threshold: float= 0.6, nor
     if normalization:
         features = features.norm(axis='sample', inplace=False)
     if weighted == False:
-        features = features.pa 
+        features = features.pa() 
 
     sample_names = features.ids()
 
